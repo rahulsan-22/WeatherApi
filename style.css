@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100vh;
+    background-color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+main #heading{
+    color:#efefef;
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-family: "Orbitron", sans-serif;
+    color: white;
+}
+
+#card_container{
+    height: 450px;
+    width: 400px;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+#one{
+  /* border: 2px solid red; */
+  flex-basis: 15%;
+}
+#one form{
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#one form #city{
+    height: 35px;
+    width: 65%;
+    padding-left: 20px;
+    border-radius: 20px;
+     /* border: none; */
+     border: 2px solid gainsboro;
+     outline: none;
+}
+#one form #city::placeholder{
+    padding-left: 20px;
+}
+
+#one form input[type="submit"]{
+    background-color: royalblue;
+    color: white;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 10px;
+
+}
+#two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 65%;
+    justify-content: space-evenly;
+    /* border: 2px solid red; */
+}
+#two img{
+    height: 60%;
+    width: 60%;
+}
+#three{
+    /* border: 2px solid red; */
+    flex-basis: 20%;
+    display: flex;
+    
+}
+
+#temperature,#humidity{
+    flex-basis: 50%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#temperature h1,#humidity h1{
+    font-family: "Edu NSW ACT Foundation", cursive;
+    font-size: 27px;
+    text-transform: capitalize;
+}
+#temperature p,#humidity p{
+    font-family: "Edu NSW ACT Foundation", cursive;
+    font-size: 20px;
+    text-transform: capitalize;
+}
